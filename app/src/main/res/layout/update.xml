@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp">
+
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ID"
+                android:textSize="20sp"
+                android:textColorHint="#818283"
+                android:inputType="text"
+                android:layout_marginBottom="15dp"/>
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textColorHint="#818283"
+                android:inputType="text"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:textColorHint="#818283"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/contactNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact No."
+                android:textColorHint="#818283"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:textColorHint="#818283"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#1AB188"
+                android:text="Authentication Details"
+                android:gravity="center"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Name"
+                android:textColorHint="#818283"
+                android:inputType="text"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColorHint="#818283"
+                android:inputType="textPassword"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#19B188"
+                android:fontFamily="sans-serif"
+                android:text="Update"
+                android:textAllCaps="true"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                android:layout_marginBottom="60dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

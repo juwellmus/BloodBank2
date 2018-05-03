@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.musa.bloodbank.SearchBlood">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Search Donor"
+           android:layout_gravity="center"
+           android:layout_marginTop="10dp"
+           android:textSize="40sp"
+           android:textColor="#000"
+           />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginTop="5sp"
+           >
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:textColor="#000"
+               android:text="Blood Group"
+               android:textSize="20sp"
+               android:layout_marginBottom="15dp"/>
+           <Spinner
+               android:id="@+id/bloodGroup"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:textColor="#000"
+               android:layout_marginBottom="15dp"/>
+           <Button
+               android:id="@+id/search"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:textColor="#000"
+               android:text="Search"
+               android:textAllCaps="false"
+               android:layout_marginBottom="15dp"/>
+
+       </LinearLayout>
+       <TextView
+           android:id="@+id/countDonor"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:text="Total Donor : "
+           android:textSize="25sp"
+           android:gravity="center"
+           />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <ListView
+               android:id="@+id/searchList"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+           </ListView>
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+</FrameLayout>

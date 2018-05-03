@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25313D"
+    android:orientation="vertical"
+    tools:context="com.example.musa.bloodbank.Registration">
+
+    <LinearLayout
+        android:id="@+id/headerLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/signUp"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="#19B188"
+            android:fontFamily="sans-serif"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="#45525A"
+            android:fontFamily="sans-serif"
+            android:text="Log In"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp">
+
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"
+                android:hint="Name"
+                android:textColorHint="#818283"
+                android:inputType="text"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"
+                android:hint="Email Address"
+                android:textColorHint="#818283"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/contactNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"
+                android:hint="Contact No."
+                android:textColorHint="#818283"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"
+                android:hint="City"
+                android:textColorHint="#818283"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"
+                android:hint="Date of Birth"
+                android:textColorHint="#818283"
+                android:onClick="selectDate"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#1AB188"
+                android:text="Authentication Details"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#ffff"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"
+                android:hint="User Name"
+                android:textColorHint="#818283"
+                android:inputType="text"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"
+                android:hint="Password"
+                android:textColorHint="#818283"
+                android:inputType="textPassword"
+                android:layout_marginBottom="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#818283"
+                    android:text="Blood Group"
+                    android:layout_marginBottom="15dp"/>
+                <Spinner
+                    android:id="@+id/bloodGroup"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffff"
+                    android:layout_marginBottom="15dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#19B188"
+                android:fontFamily="sans-serif"
+                android:text="Register"
+                android:textAllCaps="true"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                android:layout_marginBottom="60dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

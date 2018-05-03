@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25313D"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.musa.bloodbank.Login">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Please, Login to Continue"
+        android:textColor="#ffff"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="italic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:hint="User Name"
+            android:textColorHint="#9ea0a1"
+            android:inputType="text"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:hint="Password"
+            android:textColorHint="#9ea0a1"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="#45525A"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"/>
+        <Button
+            android:id="@+id/btnGetStart"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="#19B188"
+            android:text="Log In"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"/>
+    </LinearLayout>
+
+   <!-- <Button
+        android:id="@+id/btnGetStart"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Get Started"
+        android:background="#19B188"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#ffff"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif"/>-->
+
+</LinearLayout>
